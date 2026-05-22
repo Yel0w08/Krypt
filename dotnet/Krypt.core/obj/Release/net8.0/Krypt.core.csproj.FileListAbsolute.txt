@@ -1,0 +1,12 @@
+E:\Dev\C#\Krypt\dotnet\Krypt.core\bin\Release\net8.0\Krypt.core.deps.json
+E:\Dev\C#\Krypt\dotnet\Krypt.core\bin\Release\net8.0\Krypt.core.dll
+E:\Dev\C#\Krypt\dotnet\Krypt.core\bin\Release\net8.0\Krypt.core.pdb
+E:\Dev\C#\Krypt\dotnet\Krypt.core\obj\Release\net8.0\Krypt.core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dev\C#\Krypt\dotnet\Krypt.core\obj\Release\net8.0\Krypt.core.AssemblyInfoInputs.cache
+E:\Dev\C#\Krypt\dotnet\Krypt.core\obj\Release\net8.0\Krypt.core.AssemblyInfo.cs
+E:\Dev\C#\Krypt\dotnet\Krypt.core\obj\Release\net8.0\Krypt.core.csproj.CoreCompileInputs.cache
+E:\Dev\C#\Krypt\dotnet\Krypt.core\obj\Release\net8.0\Krypt.core.sourcelink.json
+E:\Dev\C#\Krypt\dotnet\Krypt.core\obj\Release\net8.0\Krypt.core.dll
+E:\Dev\C#\Krypt\dotnet\Krypt.core\obj\Release\net8.0\refint\Krypt.core.dll
+E:\Dev\C#\Krypt\dotnet\Krypt.core\obj\Release\net8.0\Krypt.core.pdb
+E:\Dev\C#\Krypt\dotnet\Krypt.core\obj\Release\net8.0\ref\Krypt.core.dll

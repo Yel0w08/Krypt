@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("PikminTea")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("encryption library for .NET")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.3.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.3+f2649ec07a242acac59237bd6617c86233c07690")]
