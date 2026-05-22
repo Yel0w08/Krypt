@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+
+		<PackageId>Krypt.Core</PackageId>
+		<Version>1.0</Version>
+		<Authors>Yel0w</Authors>
+		<Company>PikminTea</Company>
+
+		<Description>encryption library for .NET</Description>
+		<PackageTags>cryptography encryption security</PackageTags>
+
+		<RepositoryUrl>https://github.com/tonrepo/Krypt</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+</Project>
