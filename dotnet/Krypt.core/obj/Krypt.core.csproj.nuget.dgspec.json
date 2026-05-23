@@ -5,7 +5,7 @@
   },
   "projects": {
     "E:\\Dev\\C#\\Krypt\\dotnet\\Krypt.core\\Krypt.core.csproj": {
-      "version": "0.1.4",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "E:\\Dev\\C#\\Krypt\\dotnet\\Krypt.core\\Krypt.core.csproj",
         "projectName": "Krypt.Core",

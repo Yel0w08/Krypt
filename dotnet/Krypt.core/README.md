@@ -31,17 +31,26 @@ dotnet add package Krypt.Core
 ### Encrypt & decrypt a string
 
 ```csharp
-using Krypt.Encryption;
+using Krypt;
 
-string cipher = KryptAes.Encrypt("Hello, World!", "my-secret-passphrase");
-string plain  = KryptAes.Decrypt(cipher, "my-secret-passphrase");
+string secretKey = "secretkey123";
+string toEncrypt = "Hello World!";
 
-Console.WriteLine(plain); // Hello, World!
+string encrypted = Krypt.Encryption.KryptAes.Encrypt(toEncrypt, secretKey);
+Console.WriteLine($"Encrypted: {encrypted}");
+
+string decrypted = Krypt.Encryption.KryptAes.Decrypt(encrypted, secretKey);
+Console.WriteLine($"Decrypted: {decrypted}");
+// Output:
+// Encrypted: <base64 cipher>
+// Decrypted: Hello World!
 ```
 
 ### Encrypt & decrypt raw bytes
 
 ```csharp
+using Krypt.Encryption;
+
 byte[] data   = File.ReadAllBytes("document.pdf");
 byte[] cipher = KryptAes.Encrypt(data, "my-secret-passphrase");
 byte[] plain  = KryptAes.Decrypt(cipher, "my-secret-passphrase");
@@ -50,8 +59,10 @@ byte[] plain  = KryptAes.Decrypt(cipher, "my-secret-passphrase");
 ### Encrypt & decrypt a file (stream)
 
 ```csharp
-using FileStream input    = File.OpenRead("video.mp4");
-using FileStream output   = File.Create("video.mp4.enc");
+using Krypt.Encryption;
+
+using FileStream input  = File.OpenRead("video.mp4");
+using FileStream output = File.Create("video.mp4.enc");
 
 KryptAes.Encrypt(input, output, "my-secret-passphrase");
 ```
@@ -80,10 +91,10 @@ await KryptAes.DecryptAsync(cipherStream, outputStream, "my-secret-passphrase", 
 | `Decrypt(string, string) → string` | Decrypts a Base-64 cipher; returns UTF-8 string |
 | `Encrypt(byte[], string) → byte[]` | Encrypts raw bytes |
 | `Decrypt(byte[], string) → byte[]` | Decrypts raw bytes |
-| `Encrypt(Stream, Stream, string)` | Streams encryption (sync) |
-| `Decrypt(Stream, Stream, string)` | Streams decryption (sync) |
-| `EncryptAsync(Stream, Stream, string, CancellationToken)` | Streams encryption (async) |
-| `DecryptAsync(Stream, Stream, string, CancellationToken)` | Streams decryption (async) |
+| `Encrypt(Stream, Stream, string)` | Stream encryption (sync) |
+| `Decrypt(Stream, Stream, string)` | Stream decryption (sync) |
+| `EncryptAsync(Stream, Stream, string, CancellationToken)` | Stream encryption (async) |
+| `DecryptAsync(Stream, Stream, string, CancellationToken)` | Stream decryption (async) |
 
 ---
 
@@ -98,9 +109,9 @@ await KryptAes.DecryptAsync(cipherStream, outputStream, "my-secret-passphrase", 
 | IV size | 16 bytes (prepended to cipher output) |
 | Key derivation | SHA-256 over the passphrase (UTF-8) |
 
-The IV is randomly generated on every `Encrypt` call and prepended to the output. `Decrypt` strips it automatically. You never need to manage the IV yourself.
+The IV is randomly generated on every `Encrypt` call and prepended to the output. `Decrypt` strips it automatically — you never need to manage the IV yourself.
 
-> **Note:** Key derivation is intentionally simple (single SHA-256 pass) for performance and portability. If you need stronger key stretching (e.g. for user-facing passwords), consider pre-deriving your key with PBKDF2 or Argon2 before passing it to Krypt.
+> **Note:** Key derivation uses a single SHA-256 pass for performance and portability. If you need stronger key stretching for user-facing passwords, consider pre-deriving your key with PBKDF2 or Argon2 before passing it to Krypt.
 
 ---
 
