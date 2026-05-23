@@ -2,9 +2,9 @@
 
 **Krypt** is a .NET library for encryption and decryption of data. It provides a simple and secure way to protect sensitive information in your applications.
 
-[![NuGet](https://img.shields.io/nuget/v/Krypt.svg)](https://www.nuget.org/packages/Krypt.core)
+[![NuGet](https://img.shields.io/nuget/v/Krypt.Core.png)](https://www.nuget.org/packages/Krypt.Core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![.NET](https://img.shields.io/badge/.NET-6%2B-512BD4)](https://dotnet.microsoft.com)
+[![.NET](https://img.shields.io/badge/.NET-8%2B-512BD4)](https://dotnet.microsoft.com)
 
 ---
 
@@ -21,7 +21,7 @@
 ## Installation
 
 ```shell
-dotnet add package Krypt.core
+dotnet add package Krypt.Core
 ```
 
 ---
