@@ -1,2 +1,5 @@
 /dotnet/Krypt.core/.vs
 /dotnet/Krypt.core/bin
+dotnet/Krypt.core/obj/Debug/net8.0/Krypt.core.pdb
+/dotnet/Krypt.core/obj
+/dotnet/Krypt.core/bin

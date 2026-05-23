@@ -4,7 +4,7 @@
 		<TargetFramework>net8.0</TargetFramework>
 
 		<PackageId>Krypt.Core</PackageId>
-		<Version>0.1.3</Version>
+		<Version>0.1.4</Version>
 		<Authors>Yel0w</Authors>
 		<Company>PikminTea</Company>
 		<PackageIcon>icon.png</PackageIcon>
