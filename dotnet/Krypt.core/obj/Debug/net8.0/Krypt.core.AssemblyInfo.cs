@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("encryption library for .NET")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75be076dc7e6a692d620f8c06eddf1956646381c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d7b73cc37f690af18aa3cddcd51692d00c7f62e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Krypt.core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Krypt.core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
